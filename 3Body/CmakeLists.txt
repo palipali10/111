@@ -1,0 +1,19 @@
+cmake_minimum_required(VERSION 3.16)
+
+project(MySDLProject)
+
+set(CMAKE_CXX_STANDARD 17)
+
+add_subdirectory(external/SDL)
+
+add_executable(MySDLProject 3body.c)
+
+target_link_libraries(MySDLProject PRIVATE SDL3::SDL3)
+
+
+
+
+
+
+
+
